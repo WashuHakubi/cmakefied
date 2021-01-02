@@ -7,12 +7,19 @@ find_package(glew CONFIG)
 
 set(root ${CMAKE_CURRENT_SOURCE_DIR})
 
-set(phdrs ${root}/imgui.h ${root}/implot.h)
-set(hdrs ${root}/imstb_rectpack.h ${root}/imstb_textedit.h ${root}/imstb_truetype.h
+set(phdrs
+    ${root}/imgui.h
+    ${root}/implot.h
     ${root}/imgui_internal.h
     ${root}/implot_internal.h)
+set(hdrs
+    ${root}/imstb_rectpack.h
+    ${root}/imstb_textedit.h
+    ${root}/imstb_truetype.h)
 set(srcs ${root}/imgui.cpp
-    ${root}/imgui_demo.cpp ${root}/imgui_draw.cpp ${root}/imgui_widgets.cpp
+    ${root}/imgui_demo.cpp
+    ${root}/imgui_draw.cpp
+    ${root}/imgui_widgets.cpp
     ${root}/imgui_tables.cpp
     ${root}/implot_demo.cpp
     ${root}/implot_items.cpp
