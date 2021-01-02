@@ -56,6 +56,8 @@ while [[ $# -gt 0 ]]; do
     case $1 in
         imgui)
             gitit "https://github.com/ocornut/imgui.git" "$1"
+            cp $cmakefied_dir/implot/*.cpp "$deps_dir/$1"
+            cp $cmakefied_dir/implot/*.h "$deps_dir/$1"
             ;;
         Box2D)
             gitit "https://github.com/erincatto/Box2D.git" "$1"
