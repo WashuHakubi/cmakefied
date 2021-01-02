@@ -11,8 +11,7 @@ set(phdrs
     ${root}/imgui.h
     ${root}/implot.h
     ${root}/imgui_internal.h
-    ${root}/implot_internal.h)
-set(hdrs
+    ${root}/implot_internal.h
     ${root}/imstb_rectpack.h
     ${root}/imstb_textedit.h
     ${root}/imstb_truetype.h)
